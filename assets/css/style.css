@@ -2,5 +2,83 @@ button,
 div,
 form,
 input {
-  margin: 10px;
+  margin: 5px;
+}
+
+h1 {
+  color: white;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+#button-farm {
+  margin-left: 15px;
+}
+.tag {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+.tag a {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.tag .remove {
+  vertical-align: middle;
+  top: 0;
+}
+
+.tag a:hover {
+  opacity: 1.0
+}
+
+.itemDiv {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+h5 {
+  display: table;
+  background-color: #6c757d;
+  color: white;
+  padding: 0px 5px 5px 5px;
+  /* max-width: auto; */
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+body {
+  background-color: #333333;
+}
+
+.img {
+  border: 5px solid #6c757d;
+}
+
+.clearcheckbox {
+  color: white;
+  display: inline;
+  margin-left: 10px;
+}
+.search-form {
+  vertical-align: middle;
+}
+
+.favorites {
+  margin-right: 5px;
+}
+
+.favicon {
+  /* text-align: right;
+  margin-right: 5px; */
+  /* font-size: 18; */
+}
+.add-favorite {
+ margin-left: 0px 5px 0px 5px;
+ font-size: 18;
 }

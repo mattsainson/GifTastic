@@ -8,36 +8,69 @@
     <title>Food Tastic!</title>
     <!-- CSS-->
     <link rel="stylesheet" content-type="text/css" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" content-type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <link href="assets/css/glyphicons.css" rel="stylesheet" />
     <link rel="stylesheet" content-type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Food Tastic!</h1>
 
-        <!-- Movie buttons will get dumped here -->
-        <div id="button-farm"></div>
+        <div class="row">
+            <div class="col col-md-1"></div>
+            <div class="col col-md-10 text-left">
+                <h1>Food Tastic!</h1>
+            </div>
+            <div class="col col-md-1"></div>
+        </div>
 
-        <form id="food-form">
-            <label for="food-input">Feed me</label>
-            <input type="text" id="food-input">
-            <br>
+        <!-- Search buttons will get dumped here -->
+        <div class="row">
+            <div class="col col-md-1"></div>
+            <div id="button-farm" class="col col-md-10"></div>
+            <div class="col col-md-1"></div>
+        </div>
 
-            <!-- Button triggers new movie to be added -->
-            <input id="add-food" type="submit" value="Bite">
-        </form>
+        <div class="row">
+            <div class="col col-md-1"></div>
+            <div class="col col-md-10">
+                <form id="food-form">
+                    <div class="search-form">
+                        <label for="food-input"></label>
+                        <input type="text" id="food-input" value="" placeholder="Enter search value">
+                        <!-- Button triggers new button to be added -->
+                        <button class="btn btn-primary" id="add-food-btn">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        <!-- Button triggers new button to be added -->
+                        <button class="btn btn-danger" id="search-favorites" dataid="myfavorites">
+                            <span class="glyphicon glyphicon-heart favorites"></span>Favorites
+                        </button>
+                        <br>
+                    </div>
+                    <div class="clearcheckbox">
+                        <input type="checkbox" name="append-cb" id="append-cb" value="append" checked>Clear existing
+                        gifs
+                    </div>
+                </form>
+            </div>
+            <div class="col col-md-1"></div>
+        </div>
 
-        <div id="food-title"></div>
-        <div id="food-rating"></div>
-        <div id="food-img-div"></div>
+        <div class="row">
+            <div class="col col-md-1"></div>
+            <div id="food-img-div" class="col col-md-10"></div>
+            <div class="col col-md-1"></div>
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/app.js">
+        <script src="assets/javascript/app.js"></script>
 
-        </script>
     </div>
+
 </body>
 
 </html>
