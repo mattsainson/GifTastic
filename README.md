@@ -1,4 +1,4 @@
-# GifTastic
+# Food Tastic
 Site: https://mattsainson.github.io/food-tastic/
 
 This solution was created as part of a homework assignement for UC Davis Coding Bootcamp. (Matt Sainson, Sun Jan 27 2019).
